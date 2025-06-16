@@ -1,6 +1,7 @@
 # Vad-R1
 
-![Static Badge](https://img.shields.io/badge/arxiv-2505.19877-B31B1B?style=flat&logo=arXiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2505.19877) ![Static Badge](https://img.shields.io/badge/-Dataset-0078D7?style=flat&logo=huggingface&labelColor=555555&link=https%3A%2F%2Fhuggingface.co%2Fdatasets%2Fwbfwonderful%2FVad-R1)
+
+[![papaer](https://img.shields.io/badge/arxiv-2505.19877-B31B1B?style=flat&logo=arXiv)](https://arxiv.org/abs/2505.19877) [![dataset](https://img.shields.io/badge/🤗-Dataset-0078D7?style=flat)](https://huggingface.co/datasets/wbfwonderful/Vad-R1)
 
 
 Official repositories for "Vad-R1: Towards Video Anomaly Reasoning via Perception-to-Cognition Chain-of-Thought".
