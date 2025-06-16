@@ -1,6 +1,7 @@
 # Vad-R1
 
-[📑paper](https://arxiv.org/abs/2505.19877) 
+![Static Badge](https://img.shields.io/badge/arxiv-2505.19877-B31B1B?style=flat&logo=arXiv&link=https%3A%2F%2Farxiv.org%2Fabs%2F2505.19877) ![Static Badge](https://img.shields.io/badge/-Dataset-0078D7?style=flat&logo=huggingface&labelColor=555555&link=https%3A%2F%2Fhuggingface.co%2Fdatasets%2Fwbfwonderful%2FVad-R1)
+
 
 Official repositories for "Vad-R1: Towards Video Anomaly Reasoning via Perception-to-Cognition Chain-of-Thought".
 
@@ -11,6 +12,18 @@ Official repositories for "Vad-R1: Towards Video Anomaly Reasoning via Perceptio
 * The experimental results show that the proposed Vad-R1 achieves superior performance across multiple evaluation scenarios, surpassing both open-source and proprietary models in video anomaly detection and reasoning tasks.
 
 ## 🔥 News
-* [2025/06/15] 🔥 Our datasets are avaibile on 🤗Huggingface!
-* [2025/05/27] 🔥 Our paper is avaibile on Arxiv!
+* `2025/06/15` 🔥 Our datasets are avaibile on [🤗Huggingface](https://huggingface.co/datasets/wbfwonderful/Vad-R1/tree/main)!
+* `2025/05/27` 🔥 Our paper is avaibile on [Arxiv](https://arxiv.org/abs/2505.19877)!
 ## 📊 Data instruction
+Our Vad-Reasoning Dataset is split into two subsets: Vad-Reasoning-SFT which contains 1755 videos annotated with high-quality reasoning process, and Vad-Reasoning-RL which contains 6448 videos with video-level weak labels.
+![](./images/dataset.png)
+Our datasets are avaibile on [🤗Huggingface](https://huggingface.co/datasets/wbfwonderful/Vad-R1/tree/main). Each row of `Vad-Reasoning-SFT-train.jsonl` and `Vad-Reasoning-SFT-test.jsonl` contains:
+* `source` : The video source. (e.g. "UCF" means the video is collected form UCF-Crime dataset.)
+* `video` : The video name.
+* `anomaly_type` : The specific anomaly type of the video.
+* `path` : The path of the video.
+* `total_frames` : The total frames of the video.
+* `think` & `answer` : The reasoning process and the final answer of the video.
+* `start` & `end` : The time range of the anomaly event in the video (only for abnormal videos).
+
+Each row of `Vad-Reasoning-RL.jsonl` only contains the video-level weak label ("Abnormal" or "Normal").
