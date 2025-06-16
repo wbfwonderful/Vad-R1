@@ -13,12 +13,12 @@ Official repositories for "Vad-R1: Towards Video Anomaly Reasoning via Perceptio
 * The experimental results show that the proposed Vad-R1 achieves superior performance across multiple evaluation scenarios, surpassing both open-source and proprietary models in video anomaly detection and reasoning tasks.
 
 ## 🔥 News
-* `2025/06/15` 🔥 Our datasets are avaibile on [🤗Huggingface](https://huggingface.co/datasets/wbfwonderful/Vad-R1/tree/main)!
-* `2025/05/27` 🔥 Our paper is avaibile on [Arxiv](https://arxiv.org/abs/2505.19877)!
+* `2025/06/15` 🔥 Our datasets are available on [🤗Huggingface](https://huggingface.co/datasets/wbfwonderful/Vad-R1/tree/main)!
+* `2025/05/27` 🔥 Our paper is available on [Arxiv](https://arxiv.org/abs/2505.19877)!
 ## 📊 Data instruction
 Our Vad-Reasoning Dataset is split into two subsets: Vad-Reasoning-SFT which contains 1755 videos annotated with high-quality reasoning process, and Vad-Reasoning-RL which contains 6448 videos with video-level weak labels.
 ![](./images/dataset.png)
-Our datasets are avaibile on [🤗Huggingface](https://huggingface.co/datasets/wbfwonderful/Vad-R1/tree/main). Each row of `Vad-Reasoning-SFT-train.jsonl` and `Vad-Reasoning-SFT-test.jsonl` contains:
+Our datasets are available on [🤗Huggingface](https://huggingface.co/datasets/wbfwonderful/Vad-R1/tree/main). Each row of `Vad-Reasoning-SFT-train.jsonl` and `Vad-Reasoning-SFT-test.jsonl` contains:
 * `source` : The video source. (e.g. "UCF" means the video is collected form UCF-Crime dataset.)
 * `video` : The video name.
 * `anomaly_type` : The specific anomaly type of the video.
