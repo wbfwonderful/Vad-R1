@@ -27,4 +27,8 @@ Our datasets are avaibile on [🤗Huggingface](https://huggingface.co/datasets/w
 * `think` & `answer` : The reasoning process and the final answer of the video.
 * `start` & `end` : The time range of the anomaly event in the video (only for abnormal videos).
 
+An example of the reasoning annotaion and the final answer:
+
+![](./images/data-example.png)
+
 Each row of `Vad-Reasoning-RL.jsonl` only contains the video-level weak label ("Abnormal" or "Normal").
